@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30,30,30,1), rgba(255,255,255,.0)),url(Pictures/StudentChapter.jpg);
+    background-position: center;
+    background-size:
+    position: relative;
+}
+
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: top;
+}
+
+nav img
+{
+    width: 190px;
+}
+
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+    transform: translateY(-200%);
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;  
+    transform: translate(0,0px);
+}
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.container
+{
+    font-size: 25px;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px;
+}
+
+.container h1
+{
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0,0,0);
+}
+
+.container p
+{
+    color: black;
+    padding-bottom: 10px;
+}
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+    color: gainsboro;
+    border: 1px solid #000;
+    background: #000;
+    transition: 1s;
+}
+
+nav .fa
+{
+    display: none;
+}
+.fa.fa-bars
+    {
+        display:none;
+        color: white;
+        top: 0;
+        right: 0;
+        margin: 1px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+@media(max-width: 700px)
+{
+    .container
+    {
+        position:relative;
+        font-size: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 70%);
+    }
+    .nav-links ul li
+    {
+        display: block;
+        transform: translate(0,0);
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: grey;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transform: translateY(0);
+    }
+    nav .fa
+    {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .fa.fa-bars
+    {
+        display:block;
+        color: black;
+        top: 0;
+        right: 0;
+        margin: 1px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+/*@media (min-width: 701px) and (max-width: 991px)
+{
+    
+    .container
+    {
+        position:relative;
+        font-size: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 70%);
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: grey;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -260px;
+        text-align: left;
+        z-index: 2;
+    }
+    .fa
+    {
+        display: block;
+        color: red;
+        margin: 10px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    .nav-links ul
+    {
+        position: absolute;
+        background: grey;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        padding: 20px;
+    }
+}*/
+
+/*------course----------*/
+
+.course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+p
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.card-header
+{
+    text-align: center;
+    color: azure;
+    font-size: 35px;
+}
+.row
+{
+    padding: 20px;
+}
+
+.row .card
+{
+    padding: 20px;
+    background-color: rgb(220,220,230);
+    text-align: left;
+    display: inline-block;
+    width: 95%;
+    height: 95%;
+    transition: .5s;
+    box-shadow: 3px 3px 3px rgb(120,120,120);
+}
+.card:hover
+{
+    width: 100%;
+    height: 100%;
+}
+.card-body
+{
+    align-content: space-around; 
+}
+.card img
+{
+    height: 50%;
+    width: 50%;
+}
+
+/*------------------------------embedding-----------------------------*/
+.map
+{
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+/*-------------campus***********/
+.campus
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row .campus-col
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-item img
+{
+    width: 100%;
+    padding: 0px;
+    height: 50%;
+}
+
+.edit
+{
+    color: black;
+}
+.staff-card
+{
+    background-color: black;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(255,255,255,0.5)) 
+}
+.staff-col img
+{
+    padding: 20px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.staff-card h2
+{
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(150,150,170);
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/be68d6fbb7.js"></script>
+    
+    
+</head>
+    
+<body>
+    
+    <section class="header">
+        
+        <nav>
+            <a href="PracticeWebsite.html"><img src="Pictures/AIScustomLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="PracticeWebsite.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="Project-News.html">NEWS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="container">
+            <h1>Contact Us!</h1>
+            <p>Reach out to our AIS Staff with questions or concerns about the chapter, news and exclusive events, resources, or to learn more. </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    
+    </section>
+    <!------------------------------end of header------------------------------------->
+    
+    
+    
+    <!-------------------------------------middle section--------------------------------------------------------->
+    <section class="middle">
+    <div class="container1">
+    <div class="row">
+        <div class="column offset-1 col-lg-4 col-md-4">
+            <img src="Pictures/GPSLocation.png">
+        </div>
+            <div class="column offset-2">
+            <h1 class="Location-h1">On-Campus Location:</h1>
+            <h3>Office Hours: <br> Monday-Friday --> 8am - 5pm <br> Saturday-Sunday --> CLOSED <br></h3>
+                <p>Please feel free to come and see us in person. We would love to hear from you!</p>
+                <div class="badge badge-pill badge-warning">
+                <a href="https://goo.gl/maps/2vhxghLunBu1jtYb7" class="gps">Take Me There!</a>
+                </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!------------------------------end of middle section--------------------->
+    
+    
+    <section class="footer">
+    <div class="container2">
+        <div class="row2">
+            <h2>FOLLOW US ON SOCIAL MEDIA FOR MORE INFORMATION ON NEWS, EVENTS, AND MORE!</h2>
+            <div class="column col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                <img id="instagram" src="Pictures/InstagramLogoEdit.png">
+                <p class="insta">Instagram page: mtsuais</p>    
+            </div>
+            <div class="column col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <img id="linkedin" src="Pictures/LinkedInLogo.svg">
+            </div>
+        
+        </div>    
+        
+    </div>
+    
+    
+    
+    </section>
+    
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu()
+        {
+            navLinks.style.right = "0px";
+        }
+        
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    
+    </script> 
+    
+    
+    
+    
+    
+    </body>
+</html>
